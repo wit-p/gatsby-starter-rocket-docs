@@ -1,5 +1,16 @@
 # Sidebar navigation
 
+- label: "Gatsby"
+  link: "/gatsby/rocketseat"
+  items:
+    - label: "rocketseat"
+      link: "/gatsby/rocketseat"
+    - label: "Semantic UI"
+      link: "/gatsby/semantic-ui"
+    - label: "Lumen"
+      link: "/gatsby/lumen"
+    - label: "Docz Netlify CMS"
+      link: "/gatsby/docz-netlifycms"
 - label: "Introduction"
   link: "/"
 - label: "Getting started"
