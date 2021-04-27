@@ -1,42 +1,34 @@
 # Sidebar navigation
-
-- label: "Gatsby"
-  link: "/gatsby/rocketseat"
-  items:
-    - label: "rocketseat"
-      link: "/gatsby/rocketseat"
-    - label: "Semantic UI"
-      link: "/gatsby/semantic-ui"
-    - label: "Lumen"
-      link: "/gatsby/lumen"
-    - label: "Docz Netlify CMS"
-      link: "/gatsby/docz-netlifycms"
-- label: "Introduction"
+- label: "home"
   link: "/"
-- label: "Getting started"
-  link: "/getting-started"
-- label: Usage
+- label: Rocket seat
   items:
+    - label: "Introduction"
+      link: "/rocketseat/usage/introduction"
+    - label: "Getting Started"
+      link: "/rocketseat/usage/getting-started"
     - label: "Creating docs"
-      link: "/usage/creating-docs"
+      link: "/rocketseat/usage/creating-docs"
     - label: "Navigation"
-      link: "/usage/navigation"
+      link: "/rocketseat/usage/navigation"
     - label: "Shadowing"
-      link: "/usage/shadowing"
-- label: 3Dプリント
+      link: "/rocketseat/usage/shadowing"
+- label: "Semantic UI"
   items:
-    - label: "棚ブラケット"
-      link: "/usage/creating-docs"
-    - label: "Navigation"
-      link: "/usage/navigation"
-    - label: "Shadowing"
-      link: "/usage/shadowing"
+    - label: "introduction"
+      link: "/semantic-ui/introduction"
+- label: "Lumen"
+  items:
+    - label: "introduction"
+      link: "/lumen/introduction"
+- label: "Docz Netlify CMS"
+  items:
+    - label: "introduction"
+      link: "/lumen/introduction"
+- label: "Gatsby"
+  items:
 - label: ブログ
   items:
-    - label: "2021"
-      items:
-        - label: "【幸せアイテム】水を使わないで部屋を好きな香りで満たすアロマディフューザーを紹介。"
-          link: "/usage/creating-docs"
     - label: "Navigation"
       link: "/usage/navigation"
     - label: "Shadowing"

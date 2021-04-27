@@ -3,16 +3,16 @@ title: Shadowing
 description: Rocket Docs allows to customize the look by using Gatsby theme shadowing feature.
 ---
 
-To shadow/override this theme, you will need to place your files into `src/@rocketseat/gatsby-theme-docs` folder.
+このテーマをシャドウ/オーバーライドするには、ファイルを`src/@rocketseat/gatsby-theme-docs`フォルダーに配置する必要があります。
 
-If you don't know what shadowing is, or have questions about it, [check this tutorial](https://www.gatsbyjs.com/docs/themes/shadowing/) from the Gatsby documentation.
+シャドウイングとは何かわからない場合、またはシャドウイングについて質問がある場合は、Gatsby のドキュメントから[このチュートリアル](https://www.gatsbyjs.com/docs/themes/shadowing/)を確認してください。
 
-## Changing the logo
+## ロゴの変更
 
-If you want to change the logo just create the following file:
+ロゴを変更したい場合は、次のファイルを作成してください。
 
 ```js title=src/@rocketseat/gatsby-theme-docs/components/Logo.js
-import React from 'react';
+import React from "react";
 
 export default function Logo(props) {
   return (
@@ -30,13 +30,13 @@ export default function Logo(props) {
 }
 ```
 
-If your logo is a png, you could use it like this:
+ロゴが png の場合は、次のように使用できます。
 
 ```js title=src/@rocketseat/gatsby-theme-docs/components/Logo.js
-import React from 'react';
+import React from "react";
 
 // Path to the logo file on your project
-import rocketseatLogo from 'assets/logo.png';
+import rocketseatLogo from "assets/logo.png";
 
 const Logo = () => (
   <img src={rocketseatLogo} alt="Rocketseat logo" style={{ width: 180 }} />
@@ -45,37 +45,37 @@ const Logo = () => (
 export default Logo;
 ```
 
-## Changing the home text
+## ホームテキストの変更
 
-Create a file at `src/@rocketseat/gatsby-theme-docs/text/index.mdx` to edit the text. Example:
+でファイルを作成して`src/@rocketseat/gatsby-theme-docs/text/index.mdx`、テキストを編集します。例：
 
 ```mdx title=src/@rocketseat/gatsby-theme-docs/text/index.mdx
 # Introduction
 
 My awesome project!
 
-import Navigation from '@rocketseat/gatsby-theme-docs/src/components/Docs/PostNav';
+import Navigation from "@rocketseat/gatsby-theme-docs/src/components/Docs/PostNav";
 
 <Navigation
   prev={null}
   next={{
-    label: 'Installation',
-    link: '/installation',
+    label: "Installation",
+    link: "/installation",
   }}
 />
 ```
 
-## Changing theme colors
+## テーマの色を変更する
 
-We use Emotion for theming. To change the theme colors, create a file under `src/@rocketseat/gatsby-theme-docs/styles/theme.js`.
+テーマには Emotion を使用します。テーマの色を変更するには、の下にファイルを作成します`src/@rocketseat/gatsby-theme-docs/styles/theme.js`。
 
-Remember that you need to restart your server to see the update.
+アップデートを確認するには、サーバーを再起動する必要があることに注意してください。
 
 ```js title=src/@rocketseat/gatsby-theme-docs/styles/theme.js
 export default {
   colors: {
-    primary: '#8257E6',
-    background: '#FFFFFF',
+    primary: "#8257E6",
+    background: "#FFFFFF",
     shape: `#F2F2FA`,
     title: `#3D3D4D`,
     text: `#6C6C80`,
@@ -89,14 +89,13 @@ export default {
 };
 ```
 
-## Adding elements to React Live scope
+## ReactLive スコープへの要素の追加
 
-By default we add some elements to React Live Scope. If you need to add more, just
-shadow the following file:
+デフォルトでは、React LiveScope にいくつかの要素を追加します。さらに追加する必要がある場合は、次のファイルをシャドウイングするだけです:
 
 ```js title=src/@rocketseat/gatsby-theme-docs/components/Code/LiveCodeScope.js
-import { mdx } from '@mdx-js/react';
-import { css, jsx } from '@emotion/react';
+import { mdx } from "@mdx-js/react";
+import { css, jsx } from "@emotion/react";
 
 export default {
   css,
@@ -105,4 +104,4 @@ export default {
 };
 ```
 
-If you want to know more about Scope, [check this explanation](https://github.com/FormidableLabs/react-live#how-does-the-scope-work).
+スコープについて詳しく知りたい場合は、[この説明を確認](https://github.com/FormidableLabs/react-live#how-does-the-scope-work)してください。
