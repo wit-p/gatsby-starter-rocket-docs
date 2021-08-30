@@ -1,47 +1,7 @@
 # Sidebar navigation
 - label: "home"
   link: "/"
-- label: Rocket seat
-  items:
-    - label: "Introduction"
-      link: "/rocketseat/usage/introduction"
-    - label: "Getting Started"
-      link: "/rocketseat/usage/getting-started"
-    - label: "Creating docs"
-      link: "/rocketseat/usage/creating-docs"
-    - label: "Navigation"
-      link: "/rocketseat/usage/navigation"
-    - label: "Shadowing"
-      link: "/rocketseat/usage/shadowing"
-- label: "Semantic UI"
-  items:
-    - label: "introduction"
-      link: "/semantic-ui/introduction"
-- label: "Lumen"
-  items:
-    - label: "introduction"
-      link: "/lumen/introduction"
-- label: "Docz Netlify CMS"
-  items:
-    - label: "introduction"
-      link: "/lumen/introduction"
-- label: "Gatsby"
-  items:
-- label: ブログ
-  items:
-    - label: "Navigation"
-      link: "/usage/navigation"
-    - label: "Shadowing"
-      link: "/usage/shadowing"
 - label: AppSheet
   items:
     - label: "習慣化アプリの作り方"
       link: "/appsheet/howto"
-    - label: "introduction"
-      link: "/appsheet/introduction"
-- label: More
-  items:
-    - label: FAQ
-      link: /faq
-    - label: "Github"
-      link: https://github.com/rocketseat/gatsby-themes
