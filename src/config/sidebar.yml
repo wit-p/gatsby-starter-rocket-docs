@@ -33,6 +33,12 @@
       link: "/usage/navigation"
     - label: "Shadowing"
       link: "/usage/shadowing"
+- label: AppSheet
+  items:
+    - label: "習慣化アプリの作り方"
+      link: "/appsheet/howto"
+    - label: "introduction"
+      link: "/appsheet/introduction"
 - label: More
   items:
     - label: FAQ

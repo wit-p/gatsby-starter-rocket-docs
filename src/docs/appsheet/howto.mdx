@@ -1,0 +1,81 @@
+---
+title: "習慣化アプリの作り方"
+description: Learn how to get started with Google Appsheet Docs.
+---
+
+## 1. Google アカウント作成
+
+- [ここから Google アカウント作成](https://www.google.com/accounts/NewAccount?hl=ja)を行う
+- すでに Google アカウントをお持ちの方は飛ばして大丈夫です
+
+## 2. Google スプレッドシート作成
+
+### 2-1. まずは、簡単にアプリの設計をします
+
+#### 入力したい項目名(NAME)を決める
+    （例）
+    日付
+    ストレッチ
+    サイクリング
+    運動
+
+#### 入力したい項目のデータ型(TYPE)を決める
+    （例）
+    日付 -> date 型
+    ストレッチ -> Yes/No 型
+    サイクリング -> Yes/No 型
+    運動 -> Yes/No 型
+
+#### 新規作成時に、入力したい項目の初期表示(INITIAL VALUE)を決める
+    （例）
+    日付 -> TODAY()
+    ストレッチ -> false
+    サイクリング -> false
+    運動 -> false
+
+
+### 2-2. 次に、必要なデータをスプレッドシートに入力します
+
+- [Google ドライブにログイン](https://drive.google.com/)して新しいスプレッドシートを作成する
+- 列挙した入力したい項目をスプレッドシートの１行目に入力する
+
+## 3. Google AppSheet 作成
+
+### 3-1. まずは、スプレッドシートを元に AppSheet の土台を作成します
+
+- [AppSheet にアクセス](https://www.appsheet.com/)する
+- Start for free ボタンをクリックする
+- Google Sheets and Forms をクリックする
+- 1. で作成した Google アカウントでログインする
+- Make a new app > Start with your own data を選択する
+- Create a new app > App name:に好きなアプリの名前を入力する（例：習慣化アプリ）
+- Create a new app > Category:に任意のものを選択する（例：Personal/Fun）
+- 青文字の Choose your data > 2. で作成したスプレッドシートを選択する
+- Start customizing ボタンをクリックする
+
+### 3-2. 次に、AppSheet のデータ設定を行います
+
+- 左側メニューの Data タブ > 上側メニューの Columns タブ を選択する
+- TYPE 列に各入力項目のデータ型を選択する
+
+
+    \_RowNumber -> Number
+    日付 -> Date
+    ストレッチ -> Yes/No
+    サイクリング -> Yes/No
+    運動 -> Yes/No
+
+- 日付・ストレッチ・サイクリング・運動の SHOW?、EDITABLE?、REQUIRE? にチェックマークを入れる
+- 日付・ストレッチ・サイクリング・運動の INITIAL VALUE に false または true を入力する
+- 日付・ストレッチ・サイクリング・運動のそれぞれのNAMEにある、✐マークをクリックする
+  - Type Details > No value / Yes value に任意の文字を入力する
+
+（例："してない" / "した"）
+
+### 3-3. 次に、AppSheet のUX設定を行います
+- 左側メニューの UXタブ を選択する
+- View type > table を選択する
+
+### 3-4. 最後に、AppSheet の設定を保存します
+- 右上の SAVEボタン(青色) をクリックする
+
